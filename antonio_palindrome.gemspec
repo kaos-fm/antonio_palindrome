@@ -5,7 +5,7 @@ require "antonio_palindrome/version"
 Gem::Specification.new do |spec|
   spec.name = "antonio_palindrome"
   spec.version = AntonioPalindrome::VERSION
-  spec.autors = ["Antonio Fusco "]
+  spec.autors = ["kaosfm"]
   spec.email = ["tony.fusco.85@gmail.com"]
 
   spec.summary = %q{Palindrome detector}
