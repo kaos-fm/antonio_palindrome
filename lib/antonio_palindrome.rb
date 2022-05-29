@@ -10,11 +10,9 @@ class String
 
   private
   def processed_content
-    self.letters.downcase
+    split(/[^\w]/).join.downcase
   end
-  def letters
-    self.split(/[^\w]/).join
-  end
+
 
 
 end
