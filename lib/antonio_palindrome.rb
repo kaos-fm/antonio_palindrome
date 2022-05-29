@@ -2,7 +2,13 @@
 
 require_relative "antonio_palindrome/version"
 
-module AntonioPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+class String
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  private
+  def processed_content
+    self.downcase
+  end
 end
