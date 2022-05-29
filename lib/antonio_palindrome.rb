@@ -2,7 +2,7 @@
 
 require_relative "antonio_palindrome/version"
 
-class String
+module AntonioPalindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
@@ -12,7 +12,8 @@ class String
   def processed_content
     split(/[^\w]/).join.downcase
   end
-
-
-
 end
+
+class String
+  include AntonioPalindrome
+end 
