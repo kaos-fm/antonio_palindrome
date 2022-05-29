@@ -12,7 +12,10 @@ class TestAntonioPalindrome < Minitest::Test
   def test_Upcase_palindrome
     assert "Racecar".palindrome?
   end
-  def test_puntuaction_palindrome
-    skip
+  def test_punctuation_palindrome
+    assert "Madam,I'm Adam.".palindrome?
+  end
+  def test_letters
+    assert_equal "MadamImAdam","Madam,I'm Adam.".send(:letters)
   end
 end

@@ -7,8 +7,14 @@ class String
     processed_content == processed_content.reverse
   end
 
+
   private
   def processed_content
-    self.downcase
+    self.letters.downcase
   end
+  def letters
+    self.split(/[^\w]/).join
+  end
+
+
 end
