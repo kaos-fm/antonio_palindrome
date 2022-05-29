@@ -10,10 +10,13 @@ module AntonioPalindrome
 
   private
   def processed_content
-    split(/[^\w]/).join.downcase
+    to_s.split(/[^\w|\d]/).join.downcase
   end
 end
 
 class String
   include AntonioPalindrome
-end 
+end
+class Integer
+  include AntonioPalindrome
+end
